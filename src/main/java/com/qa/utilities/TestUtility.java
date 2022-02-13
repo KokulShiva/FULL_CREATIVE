@@ -48,7 +48,7 @@ public class TestUtility extends TestBase
 	public static void Drawaline(WebElement element,int x,int y)
 	{
 		actions = new Actions(DriverManager.getDriver());
-		actions.clickAndHold(element).moveByOffset(x, y);	
+		//actions.clickAndHold(element).moveByOffset(x, y);	
 		actions.moveToElement(element, x, y).clickAndHold().moveByOffset(element.getSize().getWidth()/2,element.getSize().getHeight()/2).release().perform();
 		
 		
